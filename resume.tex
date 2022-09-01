@@ -1,11 +1,29 @@
 \documentclass{article}
+\usepackage{hyperref}
+\usepackage{fontawesome}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[T1]{fontenc}
+\newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
+
+\addtolength{\topmargin}{-.3in}
 
 \begin{document}
-
+\begin{center}
+	\begin{Huge}
+		Zachary W. Walden\\
+	\end{Huge}
+	\begin{large}
+		\textsl{222 Prairie Ridge Dr. Bartlesville, Oklahoma 74006}\\
+	\end{large}
+	\begin{small}
+		\faMobile { (832)-294-9706} \mybar { } \faGithub \href{https://github.com/ZachWWalden}{ ZachWWalden}
+		\mybar { }\faEnvelope\href{mailto::zachary.walden@eagles.oc.edu}{ zachary.walden@eagles.oc.edu}
+	\end{small}
+\end{center}
 \section{Skills}
 	\subsection{Programming}
 		\begin{itemize}
-			\item Application: C/C++, Pyhton, Java
+			\item Application: C/C++, Python, Java
 			\item Embedded: C, Assembly (AVR)
 			\item HDL: Verilog, CocoTB
 			\item Other: MATLAB, Simulink, CMSIS RTOS RTX, Qt (Python \& C++), Git, GDB(-Peda)
