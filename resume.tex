@@ -3,14 +3,15 @@
 \usepackage{fontawesome}
 \usepackage{comment}
 \usepackage{multicol}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.55in]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \usepackage{enumitem}
+\usepackage{setspace}
 
 \newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
 
-\addtolength{\topmargin}{-.3in}
+\addtolength{\topmargin}{-.1in}
 
 \titleformat{\section}
 {\Large\bfseries}
@@ -24,11 +25,17 @@
 {0em}
 {}
 
+\titlespacing*{\subsection}
+{0pt}{2.0ex }{.1ex}
+
 \titleformat{\subsubsection}[runin]
 {\bfseries}
 {}
 {0em}
 {}[---]
+
+\titlespacing*{\subsubsection}
+{4pt}{.2ex}{.2ex}
 
 \begin{document}
 \begin{center}
@@ -43,18 +50,19 @@
 		\mybar { }\faEnvelope\href{mailto::zachary.walden@eagles.oc.edu}{ zachary.walden@eagles.oc.edu}
 	\end{small}
 \end{center}
+\begin{spacing}{.5}
 \section{Skills}
 	\subsection{Software}
-		\subsubsection{Languages} C/C++ (Embedded(RTOS, PIC, STM32, AVR), Linux, Windows), Python, Assembly (AVR), Verilog (CocoTb), MATLAB/Simulink, Java(General, Android), Bash
-		\subsubsection{Other} GDB, Git, Qt GUI (Python \& C++), General Linux, UML, SYSML, \LaTeX, Agile
+		\subsubsection{Languages} \small{C/C++} \scriptsize{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows)}\small{, Python, Assembly} \scriptsize{(AVR)} \small{, Verilog} \scriptsize{(CocoTb)} \small{, MATLAB/Simulink, Java} \scriptsize{(General, Android)} \small{, Bash}
+		\subsubsection{Other} \small{GDB, Git, Qt GUI} \scriptsize{(Python \& C++)} \small{, General Linux, UML, SYSML, \LaTeX, Agile}
 	\subsection{Hardware}
-		\subsubsection{Design} Kicad(PCB), Cadence Design Entry CIS, Digital (Microcontrollers, FPGA, 7400 series), Analog (Op-Amps, Transisitors, Diodes)
-		\subsubsection{Validation/Verification} Cadence PSpice, Oscilloscopes
-		\subsubsection{Prototyping} Breadboard, SMT (Experience with all package types besides BGA, QFN, \& Wafer Scale), THT
+		\subsubsection{Design} \small{Kicad(PCB), Cadence Design Entry CIS, Digital} \scriptsize{(Microcontrollers, FPGA, 7400 series)}\small{, Analog} \scriptsize{(Op-Amps, Transisitors, Diodes)}
+		\small{\subsubsection{Verification/Validation} Cadence PSpice, Oscilloscopes}
+		\subsubsection{Prototyping} \small{Breadboard, Iron \& Hot Air, SMT} \scriptsize{(Experience with all package types besides BGA, QFN, \& Wafer Scale)} \small{, THT}
 
 \section{Education}
 	\subsection{Oklahoma Christian University}
-		Bachelor of Science, Computer Engineering, GPA 4.0/4.0, Summa Cum Laude \hfill \small{\textsl{2018-2022}}
+		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \scriptsize{\textsl{2018--2022}}
 \begin{comment}
 		\subsection{Spring 2022}
 			\begin{itemize}
@@ -122,5 +130,5 @@
 	\subsection{DC/DC Boost Converter}
 	\subsection{RGB Laser Scanner Controller}
 
-
+\end{spacing}
 \end{document}
