@@ -11,7 +11,7 @@
 
 \newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
 
-\addtolength{\topmargin}{-.1in}
+\addtolength{\topmargin}{-.35in}
 
 \titleformat{\section}
 {\Large\bfseries}
@@ -63,56 +63,6 @@
 \section{Education}
 	\subsection{Oklahoma Christian University}
 		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \scriptsize{\textsl{2018--2022}}
-\begin{comment}
-		\subsection{Spring 2022}
-			\begin{itemize}
-				\item ELEC-3523 Digital Signal Processing
-				\item CENG-4303 HDL Design of Microprocessors
-				\item CENG-4753 Systems Design III
-			\end{itemize}
-		\subsection{Fall 2021}
-			\begin{itemize}
-				\item ELEC-4523 Software Engineering of Real-Time Systems
-				\item CENG-4113 Software and Network Engineering
-				\item CENG-4743 Systems Design II
-			\end{itemize}
-		\subsection{Spring 2021}
-			\begin{itemize}
-				\item CENG-3213 Computer Systems
-				\item CENG-4223 Embedded Systems Design
-				\item CENG-4213 Network Engineering
-				\item ELEC-3313 Electronic Devices
-				\item CMSC-4413 Operating Systems
-				\item CENG-4732 Systems Design I
-			\end{itemize}
-		\subsection{Fall 2020}
-			\begin{itemize}
-				\item CENG-3203 Intro to Microprocessors
-				\item ELEC-3504 Signals and Systems
-				\item ELEC-3303 Analog Electronics
-			\end{itemize}
-		\subsection{Spring 2020}
-			\begin{itemize}
-				\item ENGR-2614 Electrical Circuit Analysis
-				\item ENGR-2123 ECE Mathematics II
-			\end{itemize}
-		\subsection{Fall 2019}
-			\begin{itemize}
-				\item ENGR-2544 Introductory Digital Systems Design
-				\item CMSC-2133 Object Oriented Programming
-			\end{itemize}
-		\subsection{Spring 2019}
-			\begin{itemize}
-				\item ENGR-2113 ECE Mathematics I
-				\item ENGR-1242 Engineering Fundamentals
-				\item CMSC-1123 Programming II
-			\end{itemize}
-		\subsection{Fall 2018}
-			\begin{itemize}
-				\item CMSC-1113 Programming I
-				\item ENGR-1122 Engineering Computing
-			\end{itemize}
-\end{comment}
 
 \section{Honors \& Awards}
 	\subsection{Oklahoma Christian University}
@@ -132,7 +82,7 @@
 			\end{itemize}
 		\subsubsection{\small{Teaching Assistant: CENG-3203, CENG-3213}} \hfill \scriptsize{\textsl{Aug. 2021 - Apr. 2022}}
 			\begin{itemize}[label=--,itemsep=-.75ex]
-				\item \small{Helped students debug hardware and software issues with 8-bit AVR Microcontrollers \& 74 series logic used to control HD44780 LCD's, Keypad enocoders, and parallel DACs}
+				\item \small{Helped students debug hardware and software issues with 8-bit AVR Microcontrollers \& 74 series logic used to control HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system.}
 				\item \small{Instructed students on Assembly language concepts}
 			\end{itemize}
 		\subsubsection{\small{Teaching Assistant: ENGR-1122}} \hfill \scriptsize{\textsl{Jan. 2020 - Mar. 2020, Jan. 2022 - Apr. 2022}}
@@ -147,13 +97,29 @@
 				\item \small{Connected the authentication API to a SQL database that stored the hash of the imei}
 				\item \small{Designed a SQL database, running on Google's Cloud}
 				\item \small{Wrote dynamic Android U.I.}
-				\item \small{Researched Machine Learning for text prediction}
+				\item \small{Researched Machine Learning for text prediction} \scriptsize{(Tensorflow, Tensorflow Lite)}
 			\end{itemize}
 
 \section{Projects}
 	\subsection{8-bit 5-stage Pipeline RISC CPU}
+		\begin{itemize}[label=--,itemsep=-.75ex]
+			\item \small{Designed 32-bit fixed length RISC instruction set.}
+			\item \small{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5 stage integer pipeline in Verilog and run on a Xilinx Spartan 7 board.}
+			\item \small{Implemented, and integrated a vga sync generator and a dumb framebuffer into the cpu using special instructions to write to the framebuffer.}
+			\item \small{Wrote a simple assembler for the instruction set in Pyhton along with helper scripts to convert the assembler output into Xilinx's coe format.}
+
+		\end{itemize}
 	\subsection{DC/DC Boost Converter}
+		\begin{itemize}[label=--,itemsep=-.75ex]
+			\item \small{Designed a boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of .1V using a PIC microcontroller for control.}
+			\item \small{Used PIC Datasheet and Family Reference Manual to write register level PWM and SPI drivers.}
+			\item \small{Wrote simple proportional-only control system to stabalize the output voltage, along with a bias adjustment to ensure the correct setpoint was reached.}
+			\item \small{Designed and assembled a printed circuit board for the project.}
+		\end{itemize}
 	\subsection{RGB Laser Scanner Controller}
+		\begin{itemize}[label=--,itemsep=-.75ex]
+			\item \small{}
+		\end{itemize}
 
 \section{References}
 
