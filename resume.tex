@@ -70,7 +70,7 @@
 
 \section{Education}
 	\subsection{Oklahoma Christian University}
-		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \scriptsize{\textsl{2018--2022}}
+		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \scriptsize{\textsl{Aug. 2018 - Apr. 2022}}
 
 \section{Honors \& Awards}
 	\subsection{Oklahoma Christian University}
@@ -83,24 +83,24 @@
 \section{Experience}
 	\subsection{Oklahoma Christian University}
 		\subsubsection{\small{Professor's Assistant}} \hfill \scriptsize{\textsl{Dec. 2020 - Jul. 2021}}
-			\begin{itemize}[label=--,itemsep=-.75ex]
+			\begin{itemize}[label=--,itemsep=-.65ex]
 				\item \small{Designed 2 revisions of a 3 channel adjustable full color laser diode driver board, using Kicad, to replace a 7 color driver board using an enhanced differential Howland Current Pump.}
-				\item \small{Selected components to best meet the frequency needs of the system}
+				\item \small{Selected components to meet the frequency needs in excess of 12 MHz}
 				\item \small{Reverse engineered 7-Color TTL driver board}
 			\end{itemize}
 		\subsubsection{\small{Teaching Assistant: CENG-3203, CENG-3213}} \hfill \scriptsize{\textsl{Aug. 2021 - Apr. 2022}}
-			\begin{itemize}[label=--,itemsep=-.75ex]
+			\begin{itemize}[label=--,itemsep=-.65ex]
 				\item \small{Helped students debug hardware and software issues with 8-bit AVR Microcontrollers \& 74 series logic used to control HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system.}
 				\item \small{Instructed students on Assembly language concepts}
 			\end{itemize}
 		\subsubsection{\small{Teaching Assistant: ENGR-1122}} \hfill \scriptsize{\textsl{Jan. 2020 - Mar. 2020, Jan. 2022 - Apr. 2022}}
-			\begin{itemize}[label=--,itemsep=-.75ex]
+			\begin{itemize}[label=--,itemsep=-.65ex]
 				\item \small{Guided students in constructing an autonomous robot}
 				\item \small{Debugged Analog \& Digital circuitry, and embedded C writtin for Microchip's 16-bit dsPIC line}
 			\end{itemize}
 	\subsection{VisuALS Technology Solutions LLC} \hfill \scriptsize{\textsl{May. 2019 - Aug. 2020}}
 		\subsubsection{\small{Java Programmer}}
-			\begin{itemize}[label=--,itemsep=-.75ex]
+			\begin{itemize}[label=--,itemsep=-.65ex]
 				\item \small{Designed a Spring REST API to authenticate a software purchase using a tablet's imei number}
 				\item \small{Connected the authentication API to a SQL database that stored the hash of the imei}
 				\item \small{Designed a SQL database, running on Google's Cloud}
@@ -109,20 +109,23 @@
 			\end{itemize}
 
 \section{Projects}
-	\subsection{8-bit 5-stage Pipeline RISC CPU} \hfill \scriptsize{\textsl{Jan. 2022 - Apr. 2022}}
-		\begin{itemize}[label=--,itemsep=-.75ex]
-			\item \small{Designed 32-bit fixed length RISC instruction set.}
+	\subsection{8-bit 5-stage Pipeline RISC CPU \hfill \normalfont{\scriptsize{\textsl{Jan. 2022 - Apr. 2022}}}}
+		\begin{itemize}[label=--,itemsep=-.35ex]
+			\item \small{Designed and implemented 32-bit fixed length RISC instruction set comprising 42 instructions.}
 			\item \small{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5 stage integer pipeline in Verilog and run on a Xilinx Spartan 7 board.}
 			\item \small{Implemented, and integrated a vga sync generator and a dumb framebuffer into the cpu using special instructions to write to the framebuffer.}
 			\item \small{Wrote a simple assembler for the instruction set in Pyhton along with helper scripts to convert the assembler output into Xilinx's coe format.}
 			\item \small{Debugged modules using testbenches written using the cocotb framework for Python.}
+			\item \small{Used Xilinx's Integrated Logic Analyzer in conjunction with an internal reset trigger circuit to troubleshoot on chip behaviour.}
 		\end{itemize}
-	\subsection{DC/DC Boost Converter}
-		\begin{itemize}[label=--,itemsep=-.75ex]
-			\item \small{Designed a boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of .1V using a PIC microcontroller for control.}
+	\subsection{DC/DC Boost Converter \hfill \normalfont{\scriptsize{\textsl{Sep. 2020 - Nov. 2020}}}}
+		\begin{itemize}[label=--,itemsep=-.35ex]
+			\item \small{Designed a discrete boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of .1V using a PIC microcontroller for control.}
+			\item \small{The design achieved an average of .54\% error relatice to the target output voltage.}
 			\item \small{Used PIC Datasheet and Family Reference Manual to write register level PWM and SPI drivers.}
 			\item \small{Wrote simple proportional-only control system to stabalize the output voltage, along with a bias adjustment to ensure the correct setpoint was reached.}
 			\item \small{Designed and assembled a printed circuit board for the project.}
+			\item \small{Led 3 person team.}
 		\end{itemize}
 	\subsection{RGB Laser Scanner Controller}
 		\begin{itemize}[label=--,itemsep=-.75ex]
