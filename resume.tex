@@ -3,7 +3,7 @@
 \usepackage{fontawesome}
 \usepackage{comment}
 \usepackage{multicol}
-\usepackage[margin=0.55in]{geometry}
+\usepackage[top=0.55in,bottom=.25in,left=.25in,right=.25in, includefoot]{geometry}
 \usepackage[T1]{fontenc}
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -11,13 +11,16 @@
 
 \newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
 
-\addtolength{\topmargin}{-.35in}
+\addtolength{\topmargin}{-.25in}
 
 \titleformat{\section}
 {\Large\bfseries}
 {}
 {0em}
 {}[\titlerule]
+
+\titlespacing*{\section}
+{0pt}{2.0ex }{.5ex}
 
 \titleformat{\subsection}
 {\large\bfseries}
@@ -37,7 +40,17 @@
 \titlespacing*{\subsubsection}
 {10pt}{.2ex}{.2ex}
 
+%Try to move page number
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
 \begin{document}
+
+%\newgeometry{top=0.3in,bottom=1in,left=1in,right=1in,includefoot}
+
 \begin{center}
 	\begin{Huge}
 		Zachary W. Walden\\
@@ -45,91 +58,125 @@
 	\begin{large}
 		\textsl{222 Prairie Ridge Dr. Bartlesville, Oklahoma 74006}\\
 	\end{large}
-	\begin{small}
+	\begin{normalsize}
 		\faMobile { (832)-294-9706} \mybar { } \faGithub \href{https://github.com/ZachWWalden}{ ZachWWalden}
 		\mybar { }\faEnvelope\href{mailto::zachary.walden@eagles.oc.edu}{ zachary.walden@eagles.oc.edu}
-	\end{small}
+	\end{normalsize}
+\end{center}
+\begin{spacing}{1.25}
+\vspace*{\fill}
+To whom it may concern,
+
+I am a recent graduate in Computer Engineering and am seeking a challenging position to apply my knowledge and skills.  The Design Engineer I position description matches very well with my knowledge aspirations.  I would like to contact the hiring manager to discuss the possibilities of joining the Garmin team.
+
+As is found in my attached resume, I graduated summa cum laude with a 4.0 out of 4.0 grade point average.  I led a team of students in a project to
+
+I also worked for three of my professors as an assistant grading and helping students with labs and homework.  I also worked for one professor’s business, VisualALS Technology Solutions, LLC.
+
+My strong academic performance and work on team projects has prepared me for the Design Engineer I position I am applying to.  Please consider me for this position.
+
+I am available by phone or email, which are listed below and on my resume
+\vspace*{\fill}
+\end{spacing}
+
+\newpage
+
+\restoregeometry
+
+\begin{center}
+	\begin{Huge}
+		Zachary W. Walden\\
+	\end{Huge}
+	\begin{large}
+		\textsl{222 Prairie Ridge Dr. Bartlesville, Oklahoma 74006}\\
+	\end{large}
+	\begin{normalsize}
+		\faMobile { (832)-294-9706} \mybar { } \faGithub \href{https://github.com/ZachWWalden}{ ZachWWalden}
+		\mybar { }\faEnvelope\href{mailto::zachary.walden@eagles.oc.edu}{ zachary.walden@eagles.oc.edu}
+	\end{normalsize}
 \end{center}
 \begin{spacing}{.5}
 
-\section{Objective}
-	\sl{\small{ }}
 
-\begin{comment}
-	\sl{\small{Seeking }}
-\end{comment}
+	\textit{\large{---Seeking a Challenging position designing, building, testing mixed signal systems in a team environment.  A position with growth and leadership potential that uses my skills, knowledge and experience to provide excellence in product development and manufacturing.
+	I will contribute to the success of projects and products that will expand and improve the product lines for Garmin.}}
 
 \section{Skills}
 	\subsection{Software}
-		\subsubsection{Languages} \small{C/C++} \scriptsize{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows)}\small{, Python, Assembly} \scriptsize{(AVR)} \small{, Verilog} \scriptsize{(CocoTb)} \small{, MATLAB/Simulink, Java} \scriptsize{(General, Android)} \small{, Bash}
-		\subsubsection{Other} \small{GDB, Git, Qt GUI} \scriptsize{(Python \& C++)} \small{, General Linux, UML, SYSML, \LaTeX, Agile, Docker}
+		\subsubsection{Languages} \large{C/C++} \small{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows)}\large{, Python, Assembly} \small{(AVR)} \large{, Verilog} \small{(CocoTb)} \large{, MATLAB/Simulink, Java} \small{(General, Android)} \large{, Bash}
+		\subsubsection{Other} \large{GDB, Git, Qt GUI} \small{(Python \& C++)} \large{, General Linux, UML, SYSML, \LaTeX, Agile, Docker}
 	\subsection{Hardware}
-		\subsubsection{Design} \small{Kicad(PCB), Cadence Design Entry CIS, Digital} \scriptsize{(Microcontrollers, FPGA, 7400 series)}\small{, Analog} \scriptsize{(Op-Amps, Transisitors, Diodes)}
-		\small{\subsubsection{Verification/Validation} Cadence PSpice, Oscilloscopes}
-		\subsubsection{Prototyping} \small{Breadboard, Iron \& Hot Air, SMT} \scriptsize{(Experience with all package types besides BGA, QFN, \& Wafer Scale)} \small{, THT}
+		\subsubsection{Design} \large{Kicad(Schematic Capture, PCB layout), Cadence Design Entry CIS, Digital} \small{(Microcontrollers, FPGA, 7400 series)}\large{, Analog} \small{(Op-Amps, Transisitors, Diodes)}
+		\large{\subsubsection{Verification/Validation} Cadence PSpice, Oscilloscopes, Function Generators, Multimeters, Logic Analyzers, Network Analyzers.}
+		\subsubsection{Prototyping} \large{Breadboard, Iron \& Hot Air, SMT} \small{(Experience with all package types besides BGA, QFN, \& Wafer Scale)} \large{, THT}
 
 \section{Education}
 	\subsection{Oklahoma Christian University}
-		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \scriptsize{\textsl{Aug. 2018 - Apr. 2022}}
+		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \small{\textsl{Aug. 2018 - Apr. 2022}}
 
 \section{Honors \& Awards}
 	\subsection{Oklahoma Christian University}
 		\begin{itemize}[label=$\bullet$,itemsep=-.75ex]
-			\item \small{Outstanding ECE Senior} \hfill \scriptsize{\textsl{2022}}
-			\item \small{Outstanding ECE Junior} \hfill \scriptsize{\textsl{2021}}
-			\item \small{Outstanding ECE Sophomore} \hfill \scriptsize{\textsl{2020}}
-			\item \small{The President's Scholarship} \hfill \scriptsize{\textsl{2018}}
+			\item \large{Outstanding ECE Senior} \hfill \small{\textsl{2022}}
+			\item \large{Outstanding ECE Junior} \hfill \small{\textsl{2021}}
+			\item \large{Outstanding ECE Sophomore} \hfill \small{\textsl{2020}}
+			\item \large{The President's Scholarship} \hfill \small{\textsl{2018}}
 		\end{itemize}
 \section{Experience}
 	\subsection{Oklahoma Christian University}
-		\subsubsection{\small{Professor's Assistant}} \hfill \scriptsize{\textsl{Dec. 2020 - Jul. 2021}}
+		\subsubsection{\large{Professor's Assistant}} \hfill \small{\textsl{Dec. 2020 - Jul. 2021}}
 			\begin{itemize}[label=--,itemsep=-.65ex]
-				\item \small{Designed 2 revisions of a 3 channel adjustable full color laser diode driver board, using Kicad, to replace a 7 color driver board using an enhanced differential Howland Current Pump.}
-				\item \small{Selected components to meet the frequency needs in excess of 12 MHz}
-				\item \small{Reverse engineered 7-Color TTL driver board}
+				\item \large{Designed 2 revisions of a 3 channel adjustable full color laser diode driver board, using Kicad, to replace a 7 color driver board using an enhanced differential Howland Current Pump.}
+				\item \large{Selected components to meet the frequency needs in excess of 12 MHz}
+				\item \large{Reverse engineered 7-Color TTL driver board}
 			\end{itemize}
-		\subsubsection{\small{Teaching Assistant: CENG-3203, CENG-3213}} \hfill \scriptsize{\textsl{Aug. 2021 - Apr. 2022}}
+		\subsubsection{\large{Teaching Assistant: CENG-3203, CENG-3213, ENGR-1122}} \hfill \small{\textsl{Jan. 2020 - Mar. 2020, Aug. 2021 - Apr. 2022}}
 			\begin{itemize}[label=--,itemsep=-.65ex]
-				\item \small{Helped students debug hardware and software issues with 8-bit AVR Microcontrollers \& 74 series logic used to control HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system.}
-				\item \small{Instructed students on Assembly language concepts}
+				\item \large{Helped students troubleshoot hardware and software issues with 8-bit AVR Microcontrollers \& 74 series logic used to control HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system.}
+				\item \large{Instructed students on Assembly language concepts}
+				\item \large{Guided students in constructing an autonomous robot}
+				\item \large{Debugged Analog \& Digital circuitry, and embedded C written for Microchip's 16-bit dsPIC line}
 			\end{itemize}
-		\subsubsection{\small{Teaching Assistant: ENGR-1122}} \hfill \scriptsize{\textsl{Jan. 2020 - Mar. 2020, Jan. 2022 - Apr. 2022}}
+	\subsection{VisuALS Technology Solutions LLC} \hfill \small{\textsl{May. 2019 - Aug. 2020}}
+		\subsubsection{\large{Java Programmer}}
 			\begin{itemize}[label=--,itemsep=-.65ex]
-				\item \small{Guided students in constructing an autonomous robot}
-				\item \small{Debugged Analog \& Digital circuitry, and embedded C writtin for Microchip's 16-bit dsPIC line}
-			\end{itemize}
-	\subsection{VisuALS Technology Solutions LLC} \hfill \scriptsize{\textsl{May. 2019 - Aug. 2020}}
-		\subsubsection{\small{Java Programmer}}
-			\begin{itemize}[label=--,itemsep=-.65ex]
-				\item \small{Designed a Spring REST API to authenticate a software purchase using a tablet's imei number}
-				\item \small{Connected the authentication API to a SQL database that stored the hash of the imei}
-				\item \small{Designed a SQL database, running on Google's Cloud}
-				\item \small{Wrote dynamic Android U.I.}
-				\item \small{Researched Machine Learning for text prediction} \scriptsize{(Tensorflow, Tensorflow Lite)}
+				\item \large{Designed a Spring REST API to authenticate a software purchase using a tablet's imei number}
+				\item \large{Connected the authentication API to a SQL database that stored the hash of the imei}
+				\item \large{Designed a SQL database, running on Google's Cloud}
+				\item \large{Wrote dynamic Android U.I.}
+				\item \large{Researched Machine Learning for text prediction} \small{(Tensorflow, Tensorflow Lite)}
 			\end{itemize}
 
+\newpage
+
+\begin{center}
+	\begin{huge}
+		Zachary W. Walden\\
+	\end{huge}
+\end{center}
+
 \section{Projects}
-	\subsection{8-bit 5-stage Pipeline RISC CPU \hfill \normalfont{\scriptsize{\textsl{Jan. 2022 - Apr. 2022}}}}
+	\subsection{8-bit 5-stage Pipeline RISC CPU \hfill \normalfont{\small{\textsl{Jan. 2022 - Apr. 2022}}}}
 		\begin{itemize}[label=--,itemsep=-.35ex]
-			\item \small{Designed and implemented 32-bit fixed length RISC instruction set comprising 42 instructions.}
-			\item \small{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5 stage integer pipeline in Verilog and run on a Xilinx Spartan 7 board.}
-			\item \small{Implemented, and integrated a vga sync generator and a dumb framebuffer into the cpu using special instructions to write to the framebuffer.}
-			\item \small{Wrote a simple assembler for the instruction set in Pyhton along with helper scripts to convert the assembler output into Xilinx's coe format.}
-			\item \small{Debugged modules using testbenches written using the cocotb framework for Python.}
-			\item \small{Used Xilinx's Integrated Logic Analyzer in conjunction with an internal reset trigger circuit to troubleshoot on chip behaviour.}
+			\item \large{Designed and implemented 32-bit fixed length RISC instruction set comprising 42 instructions.}
+			\item \large{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5 stage integer pipeline in Verilog and run on a Xilinx Spartan 7 board.}
+			\item \large{Implemented, and integrated a vga sync generator and a dumb framebuffer into the cpu using special instructions to write to the framebuffer.}
+			\item \large{Wrote a simple assembler for the instruction set in Pyhton along with helper scripts to convert the assembler output into Xilinx's coe format.}
+			\item \large{Debugged modules using testbenches written using the cocotb framework for Python.}
+			\item \large{Used Xilinx's Integrated Logic Analyzer IP in conjunction with an internal reset trigger circuit to troubleshoot on chip behaviour.}
 		\end{itemize}
-	\subsection{DC/DC Boost Converter \hfill \normalfont{\scriptsize{\textsl{Sep. 2020 - Nov. 2020}}}}
+	\subsection{DC/DC Boost Converter \hfill \normalfont{\small{\textsl{Sep. 2020 - Nov. 2020}}}}
 		\begin{itemize}[label=--,itemsep=-.35ex]
-			\item \small{Designed a discrete boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of .1V using a PIC microcontroller for control.}
-			\item \small{The design achieved an average of .54\% error relatice to the target output voltage.}
-			\item \small{Used PIC Datasheet and Family Reference Manual to write register level PWM and SPI drivers.}
-			\item \small{Wrote simple proportional-only control system to stabalize the output voltage, along with a bias adjustment to ensure the correct setpoint was reached.}
-			\item \small{Designed and assembled a printed circuit board for the project.}
-			\item \small{Led 3 person team.}
+			\item \large{Designed a discrete boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of .1V using a PIC microcontroller for control.}
+			\item \large{The design achieved an average of .54\% error relatice to the target output voltage.}
+			\item \large{Used PIC Datasheet and Family Reference Manual to write register level PWM and SPI drivers.}
+			\item \large{Wrote simple proportional-only control system to stabalize the output voltage, along with a bias adjustment to ensure the correct setpoint was reached.}
+			\item \large{Designed and assembled a printed circuit board for the project.}
+			\item \large{Led 3 person team.}
 		\end{itemize}
 	\subsection{RGB Laser Scanner Controller}
 		\begin{itemize}[label=--,itemsep=-.75ex]
-			\item \small{}
+			\item \large{}
 		\end{itemize}
 
 \section{References}
