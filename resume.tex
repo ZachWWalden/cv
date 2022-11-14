@@ -9,6 +9,9 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{changepage}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
 
 \newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
 
@@ -78,21 +81,21 @@ and  skills designing, building and testing circuit boards. The Design Engineer 
 matches well with my capabilities.
 
 Per my attached resume, I earned a 4.0/4.0 GPA and graduated summa cum laude. I know the value of hard
-work, determination, and completing projects on schedule.
+work, determination and completing projects on schedule.
 
-Following my freshman year, I began working as a Java programmer at my Professor's startup VisuaALS Technology Solutions LLC. There I worked on a REST web API using the Spring Framework. The API was used to validate system purchases, by  storing the device unique IMEI number. I designed a SQL database to store hashed instances of those IMEIs. A remote management feature was also added to simplify the addition of new devices into the database.
+Following my freshman year, I began working as a Java programmer at my Professor's startup VisuaALS Technology Solutions LLC. There I worked on a REST web API using the Spring Framework. The API was used to validate system purchases, by storing the device unique IMEI number. I designed a SQL database to store hashed instances of those IMEIs. A remote management feature was also added to simplify the addition of new devices into the database.
 
-During university, I was selected as a teaching assistant for a lower division course my sophomore and senior year, and the sole teaching assistant for a series of two upper division courses my senior year.
+During university, I was selected as a teaching assistant for a lower division course my sophomore and senior year and the sole teaching assistant for a series of two upper division courses my senior year.
 In those roles, I aided students in debugging hardware and software issues they faced while working with microcontrollers alongside Digital and Analog peripherals.
 
-I was chosen by a professor to experiment with an RGB laser assembly over winter break. I reverse engineered the included 7 color driver board. Using that knowledge, I found a suitable op-amp based current source for driving a grounded load, then built and tested that design using on hand components. Through testing, I found that the university's components were not fast enough. I then developed a list of speed and power requirements, using them to source suitable components. Finally, I assembled and tested 2 PCB revisions designed in KiCad. The second revision added an adjustable current set point with a dual gang potentiometer and incorporated the advanced knowledge in PCB design I acquired during the time between revisions.
+I was chosen by a professor to experiment with an RGB laser assembly over winter break. I reverse-engineered the included 7-color driver board. Using that knowledge, I found a suitable op-amp based current source for driving a grounded load, then built and tested that design using on hand components. Through testing, I found that the university's components were not fast enough. I then developed a list of speed and power requirements, using them to source suitable components. Finally, I assembled and tested 2 PCB revisions designed in KiCad. The second revision added an adjustable current set point with a dual gang potentiometer and incorporated the advanced knowledge in PCB design I acquired during the time between revisions.
 
-Please consider me for this position.
-I am available by phone or email, which are listed below and on my resume.\\ \\
-Sincerley,
+This letter and the attached resume demonstrate that I am an adaptable engineer and an excellent fit for this position.
+I am available by phone or email, which are listed  above and on my resume.\\ \\
+Sincerely,\\
 %Signature picture
-
-Zachary Walden
+	\includegraphics[width=3.5cm,height=1cm]{signature}
+\\Zachary Walden
 
 \vspace*{\fill}
 \end{spacing}
@@ -122,16 +125,16 @@ Zachary Walden
 
 \section{Skills}
 	\subsection{Software}
-		\subsubsection{Languages} \large{ C / C++} \small{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows),}\large{ Python, Assembly} \small{(AVR),} \large{ Verilog} \small{(CocoTb),} \hspace*{1cm}\large{ MATLAB / Simulink, Java} \small{(General, Android),} \large{ Bash}
+		\subsubsection{Languages} \large{ C / C++} \small{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows),}\large{ Python, Assembly} \small{(AVR),} \large{ Verilog} \small{(CocoTb),} \hspace*{.45cm}\large{ MATLAB / Simulink, Java} \small{(General, Android),} \large{ Bash}
 		\subsubsection{Other} \large{ Docker, GDB, Git, Qt GUI} \small{(Python \& C++),} \large{ General Linux, UML, SYSML, \LaTeX, Agile}
 	\subsection{Hardware}
-		\subsubsection{Design} \large{ Kicad(Schematic Capture, PCB layout), Cadence Design Entry CIS, Digital} \small{(Microcontrollers, FPGA, 7400 \hspace*{1cm} series)}\large{, Analog} \small{(Op-Amps, Transisitors, Diodes)}
-		\subsubsection{Verification / Validation} \large{ Cadence PSpice, Oscilloscopes, Function Generators, Multimeters,\\ \hspace*{1cm} Logic Analyzers, Network Analyzers.}
-		\subsubsection{Prototyping} \large{ Breadboard, Iron \& Hot Air, SMT} \small{(Experience with all package types besides BGA, QFN, \& Wafer Scale),} \large{ \hspace*{1cm} THT}
+		\subsubsection{Design} \large{ Kicad} \small{(Schematic Capture, PCB layout),} \large{Cadence Design Entry CIS, Digital} \small{(Microcontrollers, FPGA, 74 series),} \hspace*{.45cm}  \large{ Analog} \small{(Op-Amps, Transisitors, Diodes)}
+		\subsubsection{Verification / Validation} \large{ Cadence PSpice, Oscilloscopes, Function Generators, Multimeters,\\ \hspace*{.45cm} Logic Analyzers, Network Analyzers}
+		\subsubsection{Prototyping} \large{ Breadboard, Iron \& Hot Air, SMT} \small{(Experience with all package types except BGA, QFN, \& Wafer Scale),} \large{ \hspace*{.45cm} THT}
 
 \section{Education}
 	\subsection{Oklahoma Christian University}
-		\textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \small{\textsl{Aug. 2018 - Apr. 2022}}
+		\hspace*{.35cm} \textit{Bachelor of Science, Computer Engineering}, GPA 4.0/4.0, Summa Cum Laude \hfill \small{\textsl{Aug. 2018 - Apr. 2022}}
 
 \section{Honors \& Awards}
 	\subsection{Oklahoma Christian University}
@@ -145,25 +148,25 @@ Zachary Walden
 	\subsection{Oklahoma Christian University}
 		\subsubsection{\large{Professor's Assistant}} \hfill \small{\textsl{Dec. 2020 - Jul. 2021}}
 			\begin{itemize}[label=--,itemsep=-.35ex]
-				\item \large{Designed 2 revisions of a 3 channel adjustable full color laser diode driver board, using Kicad, to replace a 7 color driver board using an enhanced differential Howland Current Pump}
+				\item \large{Designed 2 revisions of a 3 channel adjustable full color laser diode driver board, using Kicad, to replace a 7-color driver board using an enhanced differential Howland Current Pump}
 				\item \large{Selected components to meet the frequency needs in excess of 12 MHz}
-				\item \large{Designed and layed out buck converter}
-				\item \large{Reverse engineered 7-Color TTL driver board}
+				\item \large{Designed, laid out and routed a 9V 3A buck converter}
+				\item \large{Reverse engineered 7-color TTL driver board using a multimeter in continuity mode}
 			\end{itemize}
 		\subsubsection{\large{Teaching Assistant: CENG-3203, CENG-3213, ENGR-1122}} \hfill \small{\textsl{Jan. 2020 - Mar. 2020, Aug. 2021 - Apr. 2022}}
 			\begin{itemize}[label=--,itemsep=-.35ex]
-				\item \large{Helped students troubleshoot hardware and software issues with 8-bit AVR Microcontrollers \& 74 series logic used to control HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system}
+				\item \large{Helped students troubleshoot hardware and software issues with 8-bit AVR Microcontrollers, 74 series logic, HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system}
 				\item \large{Instructed students on Assembly language concepts}
 				\item \large{Guided students in constructing an autonomous robot}
-				\item \large{Debugged Analog \& Digital circuitry, and embedded C written for Microchip's 16-bit dsPIC line}
+				\item \large{Assisted students in debugging Analog \& Digital circuitry, along with embedded C written for Microchip's 16-bit dsPIC line}
 			\end{itemize}
-	\subsection{VisuALS Technology Solutions LLC}
-		\subsubsection{\large{Java Programmer}} \hfill \small{\textsl{May. 2019 - Aug. 2020}}
+	\subsection{VisuALS Technology Solutions, LLC}
+		\subsubsection{\large{Java Programmer}} \hfill \small{\textsl{May 2019 - Aug. 2020}}
 			\begin{itemize}[label=--,itemsep=-.35ex]
-				\item \large{Designed a Spring REST API to authenticate a software purchase using a tablet's imei number}
-				\item \large{Connected the authentication API to a SQL database that stored the hash of the imei}
+				\item \large{Designed a Spring REST API to authenticate a software purchase using a tablet's IMEI number}
+				\item \large{Connected the authentication API to a SQL database that stored the hash of the IMEI}
 				\item \large{Designed a SQL database running on Google's Cloud}
-				\item \large{Wrote dynamic Android U.I.}
+				\item \large{Wrote dynamic Android U.I. elements}
 				\item \large{Researched Machine Learning for text prediction} \small{(Tensorflow, Tensorflow Lite)}
 			\end{itemize}
 
@@ -178,21 +181,21 @@ Zachary Walden
 \section{Projects}
 	\subsection{8-bit 5-stage Pipeline RISC CPU \hfill \normalfont{\small{\textsl{Jan. 2022 - Apr. 2022}}}}
 		\begin{itemize}[label=--,itemsep=-.35ex]
-			\item \large{Designed and implemented 32-bit fixed length RISC instruction set comprising 42 instructions.}
-			\item \large{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5 stage integer pipeline in Verilog and run on a Xilinx Spartan 7 board}
+			\item \large{Designed and implemented 32-bit fixed length RISC instruction set comprising 42 instructions}
+			\item \large{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5-stage integer pipeline in Verilog and ran on a Xilinx Spartan 7 board}
 			\item \large{Implemented, and integrated a vga sync generator and a dumb framebuffer into the cpu using special instructions to write to the framebuffer}
 			\item \large{Wrote a simple assembler for the instruction set in Python along with helper scripts to convert the assembler output into Xilinx's coe format}
-			\item \large{Debugged modules using test-benches written using the Cocotb framework for Python, and viewing waveform dumps in GTKWave}
+			\item \large{Debugged modules using test benches written using the Cocotb framework for Python and viewing waveform dumps in GTKWave}
 			\item \large{Used Xilinx's Integrated Logic Analyzer IP in conjunction with an internal reset trigger circuit to troubleshoot on chip behavior}
 		\end{itemize}
 	\subsection{DC/DC Boost Converter \hfill \normalfont{\small{\textsl{Sep. 2020 - Nov. 2020}}}}
 		\begin{itemize}[label=--,itemsep=-.35ex]
-			\item \large{Designed a discrete boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of .1V using a PIC microcontroller for control}
-			\item \large{The design achieved an average of .54\% error relative to the target output voltage}
+			\item \large{Designed a discrete boost converter taking a 6V input and giving an adjustable 12V-24V output in steps of 0.1V using a PIC microcontroller for control}
+			\item \large{Achieved an average of .54\% error relative to the target output voltage}
 			\item \large{Used PIC Datasheet and Family Reference Manual to write register level PWM and SPI drivers}
-			\item \large{Wrote simple proportional-only control system to stabalize the output voltage, along with a bias adjustment to ensure the correct setpoint was reached}
+			\item \large{Wrote simple proportional-only control system to stabilize the output voltage, along with a bias adjustment to ensure the correct setpoint was reached}
 			\item \large{Designed and assembled a printed circuit board for the project}
-			\item \large{Led a 3 person team, delegating responibilities to the comprising members}
+			\item \large{Led a 3 person team, delegating responsibilities to its members}
 		\end{itemize}
 \begin{comment}
 	\subsection{RGB Laser Scanner Controller}
@@ -202,20 +205,20 @@ Zachary Walden
 \end{comment}
 
 \section{References}
-	\subsection{Dr. Jeff Bigelow}
+	\subsection{Jeff Bigelow, Ph.D.}
 		\begin{itemize}[label=--,itemsep=-.35ex]
 			\item \large{Chair, Department of Electrical \& Computer Engineering, Oklahoma Christian University}
 			\item \large{\href{mailto::jeff.bigelow@oc.edu}{\large{Email: jeff.bigelow@oc.edu}}}
 			\item \large{Office Phone: (405)-425-5448}
-			\item \large{Professor, and supervisor for my teaching assistant positons.}
+			\item \large{Professor and supervisor for my teaching assistant positions.}
 		\end{itemize}
-	\subsection{Steven P. Maher, MS.}
+	\subsection{Steven P. Maher, M.Sc.}
 		\begin{itemize}[label=--,itemsep=-.35ex]
-			\item \large{Associate Professor of Electrical \& Computer Engineering, Oklahoma Christian University}
-			\item \large{CEO, VisuALS Technology Solutions LLC.}
+			\item \large{Associate Professor, Department of Electrical \& Computer Engineering, Oklahoma Christian University}
+			\item \large{CEO, VisuALS Technology Solutions, LLC}
 			\item \large{\href{mailto::steve.maher@oc.edu}{\large{Email: steve.maher@oc.edu}}}
 			\item \large{Office Phone: (405)-425-5407}
-			\item \large{Professor, and employer at VisuALS Technology Solutions LLC.}
+			\item \large{Professor and employer at VisuALS Technology Solutions, LLC}
 		\end{itemize}
 
 \end{spacing}
