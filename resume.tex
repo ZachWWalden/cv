@@ -9,9 +9,6 @@
 \usepackage{enumitem}
 \usepackage{setspace}
 \usepackage{changepage}
-\usepackage{graphicx}
-
-\graphicspath{ {./images/} }
 
 \newcommand\mybar{\kern1pt\rule[-\dp\strutbox]{.8pt}{\baselineskip}\kern1pt}
 
@@ -65,57 +62,6 @@
 		\mybar { }\faEnvelope\href{mailto::zachary.walden@eagles.oc.edu}{ zachary.walden@eagles.oc.edu}
 	\end{normalsize}
 \end{center}
-
-\begin{adjustwidth}{70pt}{70pt}
-\begin{spacing}{1.25}
-\vspace*{1.5cm}
-%Issues does not get across board design experiecne. Poorly expresses my interpersonal skills.
-%Generally not convincing.
-
-\today
-\vspace*{.6cm}
-\\To whom it may concern,\\
-
-As a recent graduate in Computer Engineering, I am seeking a challenging position applying my knowledge
-and  skills designing, building and testing circuit boards. The Design Engineer I position at Garmin International's Marine division in Tulsa, Oklahoma
-matches well with my capabilities.
-
-Per my attached resume, I earned a 4.0/4.0 GPA and graduated summa cum laude. I know the value of hard
-work, determination and completing projects on schedule.
-
-Following my freshman year, I began working as a Java programmer at my Professor's startup VisuaALS Technology Solutions LLC. There I worked on a REST web API using the Spring Framework. The API was used to validate system purchases, by storing the device unique IMEI number. I designed a SQL database to store hashed instances of those IMEIs. A remote management feature was also added to simplify the addition of new devices into the database.
-
-During university, I was selected as a teaching assistant for a lower division course my sophomore and senior year and the sole teaching assistant for a series of two upper division courses my senior year.
-In those roles, I aided students in debugging hardware and software issues they faced while working with microcontrollers alongside Digital and Analog peripherals.
-
-I was chosen by a professor to experiment with an RGB laser assembly over winter break. I reverse-engineered the included 7-color driver board. Using that knowledge, I found a suitable op-amp based current source for driving a grounded load, then built and tested that design using on hand components. Through testing, I found that the university's components were not fast enough. I then developed a list of speed and power requirements, using them to source suitable components. Finally, I assembled and tested 2 PCB revisions designed in KiCad. The second revision added an adjustable current set point with a dual gang potentiometer and incorporated the advanced knowledge in PCB design I acquired during the time between revisions.
-
-This letter and the attached resume demonstrate that I am an adaptable engineer and an excellent fit for this position.
-I am available by phone or email, which are listed  above and on my resume.\\ \\
-Sincerely,\\
-%Signature picture
-	\includegraphics[width=4.2cm,height=1.2cm]{signature}
-\\Zachary Walden
-
-\vspace*{\fill}
-\end{spacing}
-\end{adjustwidth}
-
-\newpage
-
-
-\begin{center}
-	\begin{Huge}
-		Zachary W. Walden\\
-	\end{Huge}
-	\begin{large}
-		\textsl{222 Prairie Ridge Dr. Bartlesville, Oklahoma 74006}\\
-	\end{large}
-	\begin{normalsize}
-		\faMobile { (832)-294-9706} \mybar { } \faGithub \href{https://github.com/ZachWWalden}{ ZachWWalden}
-		\mybar { }\faEnvelope\href{mailto::zachary.walden@eagles.oc.edu}{ zachary.walden@eagles.oc.edu}
-	\end{normalsize}
-\end{center}
 \begin{spacing}{.5}
 
 \begin{adjustwidth}{30pt}{30pt}
@@ -155,7 +101,7 @@ Sincerely,\\
 			\end{itemize}
 		\subsubsection{\large{Teaching Assistant: CENG-3203, CENG-3213, ENGR-1122}} \hfill \small{\textsl{Jan. 2020 - Mar. 2020, Aug. 2021 - Apr. 2022}}
 			\begin{itemize}[label=--,itemsep=-.35ex]
-				\item \large{Helped students troubleshoot hardware and software issues with 8-bit AVR Microcontrollers, 74 series logic, HD44780 LCD's, Keypad enocoders, and parallel DACs in order to control a laser scanner system}
+				\item \large{Helped students troubleshoot hardware and software issues with 8-bit AVR Microcontrollers, 74 series logic, HD44780 LCD's, Keypad encoders, and parallel DACs in order to control a laser scanner system}
 				\item \large{Instructed students on Assembly language concepts}
 				\item \large{Guided students in constructing an autonomous robot}
 				\item \large{Assisted students in debugging Analog \& Digital circuitry, along with embedded C written for Microchip's 16-bit dsPIC line}
@@ -181,7 +127,7 @@ Sincerely,\\
 \section{Projects}
 	\subsection{8-bit 5-stage Pipeline RISC CPU \hfill \normalfont{\small{\textsl{Jan. 2022 - Apr. 2022}}}}
 		\begin{itemize}[label=--,itemsep=-.35ex]
-			\item \large{Designed and implemented 32-bit fixed length RISC instruction set comprising 42 instructions}
+			\item \large{Designed and implemented 32-bit fixed-length RISC instruction set comprising 42 instructions}
 			\item \large{Architected and implemented, from scratch, an 8-bit mostly bypassed CPU with a 5-stage integer pipeline in Verilog and ran on a Xilinx Spartan 7 board}
 			\item \large{Implemented, and integrated a vga sync generator and a dumb framebuffer into the cpu using special instructions to write to the framebuffer}
 			\item \large{Wrote a simple assembler for the instruction set in Python along with helper scripts to convert the assembler output into Xilinx's coe format}
