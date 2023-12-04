@@ -1,0 +1,30 @@
+PCB Desgin | PCB Layout & Routing | Reverse Engineering |
+	Cadence Orcad | Spice | Kicad |
+	Datasheets |
+	PDN Design | Board Stackup | Crosstalk | Electromagnetic Compatibility |
+	Switching Converters |
+	Soldering | Hot-Air Rework | TSSOP | SOIC | SOT | QFP
+
+Debugging |
+	Logic Analyzer | Network Analyzer | Multimeter | Function Generator | Oscilloscope |
+	Testing |
+
+
+Digital Logic |
+	Verilog | CocoTB | AMD Xilinx | FPGA | Vivado |
+	Microcontrollers | STM32 | PIC | AVR | SAM | ARM | 8-Bit | 16-Bit | 32-Bit |
+	Microarchitecture | Pipelining | Forwarding | Bypassing |
+	SPI | I2C |
+
+Analog |
+	Op-Amps | Transistors | Diodes | RLC Circuits |
+
+Software |
+	C/C++ | C | C++ | Python | Java | Assembly |
+	Agile | Object Oriented Design | OOP | Desgin Patterns | Concurrency | Multithreading |
+	Git | Docker | Linux | Latex | UML | SYSML | JSON | libcurl | Bash | GDB | Vim | Make
+	Machine Learning | Tensorflow | Google TPU | Google Coral |
+	REST | mySQL |
+	CMSIS RTOS RTX |
+
+Problem-Solving | Oral Communication | Collaboration | Team Oriented | Written Communication | Toastmasters

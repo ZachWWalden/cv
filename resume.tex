@@ -42,6 +42,8 @@
 \titlespacing*{\subsubsection}
 {10pt}{.2ex}{.2ex}
 
+\newcommand{\companyHeader}[2]{--\large{\bfseries{#1}}\hfill \small{\textsl{#2}}}
+
 %Try to move page number
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -83,19 +85,20 @@
 \end{multicols}
 \end{center}
 \section{Skills}
+	\subsection{Software}
+		\subsubsection{Languages} \large{\hspace*{2pt} C/C++} \small{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows),}\large{ Python, Assembly} \small{(AVR), } \large{Verilog} \small{(CocoTb), } \hspace*{.45cm}\large{MATLAB/Simulink, Java} \small{(General, Android),} \large{ Bash}
 	\subsection{Hardware}
 		\subsubsection{Design} \large{\hspace*{2pt} Kicad} \small{(Schematic Capture, PCB layout),} \large{Cadence Design Entry CIS, Digital} \small{(Microcontrollers, FPGA, 74 series), } \hspace*{.45cm}  \large{Analog} \small{(Op-Amps, Transisitors, Diodes)}
 		\subsubsection{Verification/Validation} \large{\hspace*{2pt} Cadence PSpice, Oscilloscopes, Function Generators, Multimeters,\\ \hspace*{.45cm} Logic Analyzers, Network Analyzers}
 		\subsubsection{Prototyping} \large{\hspace*{2pt} Breadboard, Iron \& Hot Air, SMT} \small{(Experience with all package types except BGA, QFN, \& Wafer Scale),} \large{ \hspace*{.45cm} THT}
-\subsection{Software}
-		\subsubsection{Languages} \large{\hspace*{2pt} C/C++} \small{(Embedded(RTOS, PIC, STM32, AVR), Linux, Windows),}\large{ Python, Assembly} \small{(AVR), } \large{Verilog} \small{(CocoTb), } \hspace*{.45cm}\large{MATLAB/Simulink, Java} \small{(General, Android),} \large{ Bash}
+
 		\subsubsection{Other} \large{\hspace*{2pt} Docker, GDB, Git, Qt GUI} \small{(Python \& C++), } \large{General Linux, UML, SYSML, \LaTeX, Agile}
 
 \section{Experience}
-	\subsection{VisuALS Technology Solutions, LLC}
-		\subsubsection{\large{Open Source Strategist}} \hfill \small{\textsl{May 2022 - Present}}
+	\companyHeader{VisuALS Technology Solutions, LLC}{2019 - Present}
+		\subsubsection{\large{Open Source Developer}} \hfill \small{\textsl{May 2022 - Present}}
 			\begin{itemize}[label=--,itemsep=-.35ex]
-				\item \large{Performed software testing of a Windows Presentation Foundation app on Windows VMs}
+				\item \large{Determined the cause of a display scaling issue in VisuALS' Android application, And determined what will be needed to solve the issue}
 				\item \large{Researched running the application through WINE on Linux to provide a better development environment for open source developers}
 				\item \large{Determined method to properly sign executable files so that windows automatically trusts the program upon installation}
 			\end{itemize}
@@ -123,7 +126,7 @@
 	\end{huge}
 \end{center}
 
-	\subsection{Oklahoma Christian University}
+	\companyHeader{Oklahoma Christian University}{Jan. 2020 - Apr. 2022}
 		\subsubsection{\large{Professor's Assistant}} \hfill \small{\textsl{Dec. 2020 - Jul. 2021}}
 			\begin{itemize}[label=--,itemsep=-.35ex]
 				\item \large{Increased RGB laser system color capability by 20 times by designing a 3 channel modulating laser driver board}
